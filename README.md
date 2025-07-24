@@ -58,10 +58,11 @@ To control the robot using keyboard:
 
 ```bash
 
-•	source /opt/ros/humble/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 # Ensure /cmd_vel topic is published
 ```
+
 
 ## 🧠 Future Work
 
@@ -69,3 +70,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 - Implement SLAM using LiDAR data
 - Add sensor fusion (IMU + wheel encoders)
 - Integrate with real robot hardware
+
+![default_gzclient_camera(1)-2025-06-24T12_40_08 778891](https://github.com/user-attachments/assets/3ff26aad-ee29-4923-9f40-d72224f4d8de)
+
+https://github.com/user-attachments/assets/ba3ce3af-f669-4a56-a548-e21b47649179
