@@ -12,7 +12,9 @@ This repository contains the complete design and simulation of a **4-Wheel Diffe
 
 ## 🛠️ Setup
 
-```bash
+After installing the required tools, open an ubuntu terminal and follow these steps:
+
+```bash 
 # Source the ROS 2 environment
 source /opt/ros/humble/setup.bash
 
@@ -27,7 +29,7 @@ cd src
 ros2 pkg create –build-type ament_cmake pkgname
 
 # Create model and launch files according to the specific design of the robot
-cd pkg
+cd pkgname
 mkdir launch model
 cd model
 gedit robot.xacro and gedit robot.gazebo
@@ -45,4 +47,25 @@ colcon build
 source install/setup.bash
 
 # Launch the simulation
-ros2 launch amr_4wd amr_sim.launch.py
+ros2 launch pkgname launchfile.py
+```
+
+---
+
+## 🎮 Teleoperation
+
+To control the robot using keyboard:
+
+```bash
+
+•	source /opt/ros/humble/setup.bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+# Ensure /cmd_vel topic is published
+```
+
+## 🧠 Future Work
+
+- Add navigation stack (Nav2) for path planning
+- Implement SLAM using LiDAR data
+- Add sensor fusion (IMU + wheel encoders)
+- Integrate with real robot hardware
