@@ -1,0 +1,1 @@
+This repository contains the complete design and simulation of a **4-Wheel Differential Drive Autonomous Mobile Robot (AMR)** using **ROS 2 Humble**, **Gazebo**, and **URDF/XACRO**. The project was developed as part of a robotics internship project and includes robot modeling, simulation, teleoperation, and sensor integration (IMU and LiDAR).
